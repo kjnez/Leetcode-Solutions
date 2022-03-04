@@ -33,3 +33,5 @@ class Solution:
                     cache[r+1][c+1] = 1 + min(cache[r][c], cache[r][c+1], cache[r+1][c])
                     maxL = max(maxL, cache[r+1][c+1])
         return maxL**2
+
+# Thoughts: for problems with array, bottom-up solutions can be more intuitive, since the created cache array usually has some relationships with the original array.
